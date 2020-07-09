@@ -1,0 +1,79 @@
+/* -------- Standard Stylizations -------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Roboto';
+    background-color: #dfe6e9;
+}
+
+/* -------- Start of the Navbar -------- */
+header {
+    width: 100%;
+    background-color: #d63031;
+    height: 80px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+span {
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 600;
+    color: #fab1a0;
+    cursor: pointer;
+}
+
+nav ul {display: flex;}
+
+nav ul li {
+    margin: 0 15px;
+    text-transform: uppercase;
+}
+
+nav ul li a {
+    font-weight: 400;
+    color: #fab1a0;
+}
+
+nav ul li a:hover {
+    transition: ease;
+    color: #dfe6e9
+}
+
+.fa-bars {
+    font-size: 2em;
+    font-weight: 600;
+    color: #fab1a0;
+    cursor: pointer;    
+}
+
+#menu, .fa-bars {display: none;}
+
+@media (max-width:800px) {
+    nav {
+        width: 100%;
+        background-color: #d63031;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        line-height: 80px;
+        transition: all ease 0.3s;
+    }
+
+    nav ul {flex-flow: column;}
+
+    nav ul li a {display: block;}
+     
+    .fa-bars {display: block;}
+
+    #menu:checked ~ nav {left:0;}
+}
