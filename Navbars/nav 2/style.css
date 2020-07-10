@@ -1,0 +1,99 @@
+/* -------- Standard Stylizations -------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {font-family: sans-serif;}
+
+/* -------- Start of the Navbar -------- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #303952;
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
+    width: 100%;
+    position: fixed;
+}
+
+span {
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 800;
+    color: #c44569;
+    cursor: pointer; 
+    margin-left: 20px;
+}
+
+.menu:before {
+    content: "\f0c9";
+    font-family: FontAwesome;    
+    color: #c44569;
+    font-size: 32px;
+    margin-right: 20px;
+    font-weight: 800;
+}
+
+nav ul{display: flex;}
+
+nav ul li {margin: 0 20px;}
+
+nav ul li a {
+    color: #cf6a87;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 29px 13px;
+}
+
+nav ul li a:hover {
+    background: #c44569;
+    transition: ease 0.2s;
+}
+
+#check, .menu:before {display: none;}
+
+/* -------- Navbar Tablet's and Mobile Devices -------- */
+@media (max-width:900px) {
+    nav {
+        position: absolute;
+        left: -100%;
+        top: 80px;
+        width: 100%;
+        background: #303952; 
+        transition: linear 0.4s;
+        overflow: auto;
+        max-height: 85vh;
+    }
+
+    nav ul {
+        display: block;
+        line-height: 80px;
+        text-align: center;
+    }
+
+    nav ul li {
+        border-bottom: solid #596275;    
+        margin: 0;    
+    }
+
+    nav ul li:last-child {border-bottom:none;}
+
+    nav ul li a {
+        display: block;
+        padding: 0;
+    }
+
+    .menu:before {display: block;}
+
+    #check:checked ~ .menu:before {
+        content: "\f00d  ";
+        font-family: FontAwesome;
+    }
+
+    #check:checked ~ nav {left:0;}
+}
