@@ -16,14 +16,14 @@ body {
 
 .center {text-align: center;}
 
-h2, p, i, span {color:#cf6a87;}
+.m10 {margin-top: 10px;}
 
-.footer-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    grid-gap: 40px;   
-    padding-right: 15px;
-    padding-left: 15px;
+h2, i, span {color:#cf6a87;}
+p {color:#f8a5c2;}
+
+.footer-container {  
+    padding-right: 20px;
+    padding-left: 20px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -41,12 +41,56 @@ h2, p, i, span {color:#cf6a87;}
 /* -------- Start of the Footer -------- */
 footer {
     width: 100%;
-    height: 300px;
+    height: 350px;
     background-color: #303952;
 }
 
-footer h2, footer p, i, span {
-    margin-top: 10px;
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 5vw; 
 }
 
+
+
+.social ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+.social ul li i{
+  background: transparent;
+  padding: 8px 8px;
+  border: solid #596275;
+  text-align: center;
+  color: white;
+  transition: all ease;
+}
+
+.social ul li i:hover {
+  color: blue;
+  background: #cf6a87;
+}
+
+form {
+  display: flex; 
+  flex-flow: column;
+}
+
+form {
+
+}
+
+
+/* -------- Footer Tablet's and Mobile Devices -------- */
+
+@media (max-width: 800px) {
+  footer {
+    height: auto;
+  }
+
+  .footer-content {
+    grid-template-columns: repeat(1, 80%);
+  }
+}
 
