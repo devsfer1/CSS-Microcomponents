@@ -1,0 +1,65 @@
+/* -------- Standard Stylizations -------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: roboto;
+}
+
+body {
+    background-color: #ffeaa7;
+}
+
+
+/* -------- Start of the Navbar -------- */
+.sidebar {
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    left: 0;
+    background-color: #fdcb6e;
+    z-index: 999;
+    transition: linear 0.4s;
+}
+
+.sidebar ul {
+    display: block;
+    align-items: center;
+    text-align: center;
+    line-height: 80px;
+}
+
+.sidebar ul li a {
+    color: #2d3436;
+    display: block;
+}
+
+input {
+    position: fixed;
+    right: 40px;
+    top: 40px;
+    z-index: 1000;
+}
+
+.menu:before {
+    content: "\f0c9";
+    font-family: FontAwesome;  
+    position: fixed;
+    right: 40px;
+    top: 40px;
+    z-index: 1000; 
+    background: blue;
+    padding: 15px;
+    border-radius: 90px;
+    font-size: 24px;
+}
+
+#check {
+    visibility: hidden;
+}
+
+#check:checked ~ .sidebar {
+    left: -300px;
+}
