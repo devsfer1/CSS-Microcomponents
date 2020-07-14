@@ -8,32 +8,39 @@
     font-family: roboto;
 }
 
-body {
-    background-color: #ffeaa7;
-}
+body {background-color: #bdc3c7;}
 
 
-/* -------- Start of the Navbar -------- */
+/* -------- Start of the Sidebar -------- */
 .sidebar {
     position: fixed;
     width: 300px;
     height: 100vh;
-    left: 0;
-    background-color: #fdcb6e;
+    left: -300px;
+    background-color: #ecf0f1;
     z-index: 999;
     transition: linear 0.4s;
 }
 
 .sidebar ul {
-    display: block;
-    align-items: center;
     text-align: center;
     line-height: 80px;
 }
 
+.sidebar ul li {border-bottom: solid #95a5a6;}
+
 .sidebar ul li a {
-    color: #2d3436;
+    color: black;
     display: block;
+    text-transform: uppercase;
+    transition: ease;
+}
+
+.sidebar ul li a:hover {transform: scale(1.1);}
+
+.copy {
+    margin-top: 150px;
+    text-align: center;
 }
 
 input {
@@ -44,22 +51,25 @@ input {
 }
 
 .menu:before {
-    content: "\f0c9";
+    content: "\f0c9"; 
     font-family: FontAwesome;  
     position: fixed;
     right: 40px;
-    top: 40px;
+    top: 20px;
     z-index: 1000; 
-    background: blue;
-    padding: 15px;
+    background: #ecf0f1;
+    padding: 10px 15px;
     border-radius: 90px;
-    font-size: 24px;
+    border: 2px solid black;
+    font-size: 20px;
+    cursor: pointer;
 }
 
-#check {
-    visibility: hidden;
-}
+#check {visibility: hidden;}
 
-#check:checked ~ .sidebar {
-    left: -300px;
+#check:checked ~ .sidebar {left: 0;}
+
+#check:checked ~ .menu:before {
+    content: "\f00d  "; 
+    font-family: FontAwesome;
 }
