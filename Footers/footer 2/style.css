@@ -1,0 +1,102 @@
+/* -------- Standard Stylizations -------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto';
+}
+
+html,body {height: 100%;}
+.wrapper {min-height: 100%;}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (min-width: 768px) {
+    .container {width: 750px;}
+  }
+  @media (min-width: 992px) {
+    .container {width: 970px;}
+  }
+  @media (min-width: 1200px) {
+    .container {width: 1170px;}
+  }
+/* -------- Start of the Footer -------- */
+footer {
+    position: relative;
+    height: 400px;
+    background-color: #c23616;
+    color: white;
+}
+
+.content {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.titles {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.titles h2 {
+    margin: 0 30px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 80px;
+}
+
+.titles h2 a {color: #f5f6fa;}
+
+.titles h2:after {
+    content: '';
+    height: 2px;
+    background-color: #dcdde1;
+    display: block;
+    margin-top: -20px;
+}
+
+hr {
+    margin-top: 60px;
+    color: #dcdde1;
+    width: 50%;
+    vertical-align: middle;
+}
+
+footer p {
+    margin-top: 80px;
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+ul li {margin: 0 20px;}
+
+ul li a {
+    color: white;    
+    font-size: 24px;
+}
+
+
+/* -------- Footer Tablet's and Mobile Devices -------- */
+@media (max-width: 1000px) {
+    footer {height: 800px;}
+
+    .titles {flex-flow: column;}
+
+    .titles h2:after {display: none;}
+
+}
