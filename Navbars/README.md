@@ -1,1 +1,1 @@
-Repository created to train my CSS skills through micro projects such as headers, navbars and footers.
+Navbars are very important when creating a Site. take a look at my navbars already created and inspired by pure CSS.
