@@ -1,0 +1,121 @@
+/* -------- Standard Stylizations/Reset's -------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {font-family: 'Mulish', sans-serif;}
+
+h1, h2, h3, p, span,a,i,label {color: #ffffff;}
+
+/* -------- Start of the Navbar -------- */
+header {
+    position: sticky;
+    top: 0;
+    height: 80px;
+    background: #5352ed;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+ul {
+    display: flex;
+    margin-right: 120px;
+}
+
+ul li a {
+    margin: 0 20px;
+    font-weight: 600;
+}
+
+ul li a:hover {
+    color: #2f3542;
+    transition: all ease 0.2s;
+}
+
+.contact {display: flex;}
+
+.contact p {margin: 0 10px; }
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #1e90ff;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 10px 50px;
+}
+
+button:hover {
+    background-color: #2f3542;
+    transition: all ease 0.2s;    
+}
+
+#check, .menu {display: none;}
+
+
+/* -------- Mobile Navbar -------- */
+@media (max-width:1100px) {  
+    .logo {
+        margin-right: auto;
+        padding: 20px;
+    }
+
+    .menu {display: block;}
+
+    .menu:before {
+        display: block;
+        content: "\f0c9";
+        font-family: FontAwesome;  
+        font-size: 24px;
+        padding: 20px;
+        cursor: pointer;
+    }
+
+    nav {
+        height: 350px;
+        text-align: center;
+        margin: 0;
+        flex-direction: column;
+        background: #5352ed;
+        width: 100%;
+        display: none;
+    }
+
+    nav ul {
+        line-height: 40px;
+        display : block;
+        text-align: center;
+        margin: 0;
+    }
+
+    .contact {
+        flex: 100%;
+        text-align: center;
+        justify-content: center;
+        margin-top: 25px;
+    }
+
+    button {margin-top: 20px;}
+
+    #check:checked ~ nav {display: block;}
+}
