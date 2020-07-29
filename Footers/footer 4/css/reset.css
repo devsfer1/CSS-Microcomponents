@@ -14,11 +14,16 @@ body,html {height: 100%;}
 .wrapper {min-height: 100%;}
 
 h1,h2,h3,h4,h5,h6{
-    color: #FFF5FF;
+    color: #DADDE2;
     font-weight: 100;
 }
+
 a,p,i {
-    color: #C6C6C6;
-    font-weight: 100;
-    font-size:0.675em;
+    font-weight: 200;
+    color: #D4D4D4;
 }
+
+p {line-height: 1.4em;}
+
+i {width: 17px;}
+
