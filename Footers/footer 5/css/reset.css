@@ -1,0 +1,22 @@
+/* -------- /Reset's -------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body,html {height: 100%;}
+
+body {font-family: 'Poppins', sans-serif;}
+
+.wrapper {min-height: 100%;}
+
+h1,h2,h3,h4,h5,h6,i,a,p {color: #28161C;}
+
+p,a { font-size: 14px;}
+
+p {line-height: 1.4em;}
+
+

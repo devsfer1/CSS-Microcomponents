@@ -1,0 +1,119 @@
+/* -------- /Footer -------- */
+.footer {background: #FFE8F7;}
+
+/* -------- /Footer /Wrapper's -------- */
+.footer-wrapper {
+    display: flex;   
+    flex-wrap: wrap;
+    padding: 80px 40px;
+    width: 100%;
+}
+
+.footer-title {
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.footer-title::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    left: 0;
+    top: 40px;
+    display: block;
+    background-color: #564147;
+}
+
+.column-about,
+.column-links,
+.column-news,
+.column-contact {
+    flex: 0 0 25%;
+    max-width: 25%;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+@media(max-width: 950px) {
+    .column-about,
+    .column-links,
+    .column-news,
+    .column-contact {
+        flex: 0 0 50%;
+        max-width: 50%;     
+        margin-bottom: 20px;   
+    }       
+}
+
+@media(max-width: 600px) {
+    .column-about,
+    .column-links,
+    .column-news,
+    .column-contact {
+        flex: 0 0 100%;
+        max-width: 100%;     
+        margin-bottom: 20px;   
+    }       
+}
+
+/* -------- /Footer /About -------- */
+
+.responsive-img-bird {
+    width: 100%;
+    max-width: 150px;
+    height: 80px;  
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* -------- /Footer /Link -------- */
+
+.link-list {display: flex;  }
+
+.links {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.link-target {
+    text-transform: uppercase;
+    display: flex;
+    margin-bottom: 5px;
+}
+
+/* -------- /Footer /News -------- */
+
+.responsive-img-bird-news {
+    width: 100%;
+    max-width: 80px;
+    height: 60px;  
+    object-fit: cover;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    float: left;
+}
+
+/* -------- /Footer /Contact -------- */
+.contact-row {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.contact-icon {
+    width: 39px;
+    height: 38px;
+    padding: 10px;
+    border: 1px solid #564147;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 20px 0 0;
+}
+
+/* -------- /Footer /Copy-------- */
+.footer-copy {
+    background: #E3E0F3; 
+    padding: 20px 80px;
+}
+
