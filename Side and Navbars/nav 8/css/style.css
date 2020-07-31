@@ -1,0 +1,95 @@
+/* -------- /Reset's -------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {font-family: 'Montserrat', sans-serif;}
+
+.mobile-bar,.logo, a {color: #D4D4D4;}
+
+/* -------- /Desktop Navbar -------- */
+header,
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    justify-content: space-between;
+    padding: 30px 40px;
+    background-color: #303030;
+}
+
+.logo {
+    padding: 10px 0 10px;
+    font-size: 18px;  
+    text-transform: uppercase;
+    letter-spacing: 2px;    
+}
+
+.nav-list {margin: 0 20px 0 0;}
+
+.nav-link {
+    display: block;     
+    padding: 10px 0 10px;
+}
+
+.nav-link:hover {
+    transition: ease 0.2s;
+    color: #A60003;
+}
+
+.icon-down::before {
+    content: "\f107";
+    font-family: FontAwesome;  
+}
+
+.nav-link:hover + .dropdown-menu,
+.dropdown-menu:hover {
+    opacity: 1.0;
+    visibility: visible;
+}
+
+.dropdown-menu {
+    position: absolute;
+    min-width: 150px;
+    opacity: 0.0;
+    transition: all 400ms ease-in-out;   
+    background: #28161C;
+    line-height: 40px;
+    text-align: center;
+    visibility: hidden;
+}
+
+.dropdown-link {display: block;}
+
+.dropdown-link:hover {background: #A60003;}
+
+#check, label {display: none;}
+
+/* -------- /Mobile Navbar -------- */
+@media(max-width:800px) {
+    .navbar {
+        flex: 100%;
+        text-align: center;
+        display: none;
+    }
+    
+    .dropdown-menu {
+        visibility: visible;
+        opacity: 1.0;
+        position: static;
+        background: none;
+    }
+
+    label {
+        display: block;
+        padding: 10px 0 10px;
+    }
+
+    #check:checked ~ .navbar {display: block;}
+}
