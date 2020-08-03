@@ -1,0 +1,15 @@
+/* -------- /Reset's -------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body,html {height: 100%;}
+
+.wrapper {min-height: 100%;}
+
+
+/* -------- /Desktop Footer -------- */
