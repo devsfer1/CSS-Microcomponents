@@ -4,6 +4,11 @@ Olá, esse repositório foi criado para eu praticar minhas habilidades com CSS, 
  
 ## 🌚 Veja abaixo alguns Exemplos:
 
-![Footer](https://user-images.githubusercontent.com/58652794/87618123-74f63f80-c6ef-11ea-8171-5e5955524437.PNG)
-![Nav 1](https://user-images.githubusercontent.com/58652794/87618352-0665b180-c6f0-11ea-9333-e16fd280fe95.PNG)
-![Nav 1 mob](https://user-images.githubusercontent.com/58652794/87618365-11204680-c6f0-11ea-812d-8fe23d6120c2.PNG)
+![Sidebar-1](https://user-images.githubusercontent.com/58652794/90967337-50427400-e4b4-11ea-9232-c20366e24d36.gif)
+
+![Sidebar-2](https://user-images.githubusercontent.com/58652794/90967345-5fc1bd00-e4b4-11ea-83da-53dd57046c7e.gif)
+
+![Footer-1](https://user-images.githubusercontent.com/58652794/90967351-6f410600-e4b4-11ea-86bb-7ad62a4f2100.PNG)
+
+![Footer-2](https://user-images.githubusercontent.com/58652794/90967358-7a943180-e4b4-11ea-8f22-391546c2c31b.PNG)
+
